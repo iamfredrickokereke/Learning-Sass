@@ -43,7 +43,7 @@ body{
 // @import
 
 
-//mixins
+//mixins and passing properties
     
 @mixin transform-it($prop1, $prop2) {
     width: $prop1;
@@ -54,6 +54,7 @@ body{
     transform: rotate(20deg) scale(1.5);
 }
 
+// calling mixinx
 .transform{
 @include transform-it(300, 300);
 }  
