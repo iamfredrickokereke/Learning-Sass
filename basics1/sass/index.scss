@@ -61,7 +61,7 @@ body{
     @include transform-it(500, 500);
     }   
 
-// using s
+// using extended class-like feature
 
 %extended-border{
     border: 1px solid red;
