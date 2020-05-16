@@ -27,3 +27,18 @@ body{
         text-decoration: none;
     }
 }
+
+//using partials
+// @import
+
+
+//mixins
+
+.transform{
+    width: 150px;
+    height: 80px;
+    background-color: $primary-color;
+    -webkit-transform: rotate(20deg) scale(1.5);
+    -ms-transform: rotate(20deg) scale(1.5);
+    transform: rotate(20deg) scale(1.5);
+}
