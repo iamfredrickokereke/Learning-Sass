@@ -19,12 +19,23 @@ body{
         ul{
             li{
                 font-size: 3em;
+                &:nth-child(1){
+                    font-weight: bold;
+                }
+
+                &::nth-child(-1){
+                    font-size: 1em;
+                }
             }
         }
     }
 
     a{
         text-decoration: none;
+        &:hover{
+            color: red;
+
+        }
     }
 }
 
@@ -76,4 +87,17 @@ body{
      }
 
     }
+}
+
+//operators
+
+.element{
+    font-size: 10em + 4;
+    height: 20% * 5;
+
+}
+
+.element2{
+    width: 300px -5px;
+
 }

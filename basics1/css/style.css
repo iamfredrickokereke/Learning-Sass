@@ -16,8 +16,17 @@ body {
 .container nav ul li {
   font-size: 3em;
 }
+.container nav ul li:nth-child(1) {
+  font-weight: bold;
+}
+.container nav ul li::nth-child(-1) {
+  font-size: 1em;
+}
 .container a {
   text-decoration: none;
+}
+.container a:hover {
+  color: red;
 }
 
 .transform {
@@ -50,6 +59,15 @@ body {
 
 .pseudo a:hover {
   text-decoration: none;
+}
+
+.element {
+  font-size: 14em;
+  height: 100%;
+}
+
+.element2 {
+  width: 300px -5px;
 }
 
 /*# sourceMappingURL=style.css.map */
