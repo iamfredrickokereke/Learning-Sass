@@ -35,10 +35,18 @@ body{
 //mixins
 
 .transform{
+@include transform-it(300, 300);
+}  
+.transform2{
+    @include transform-it(500, 500);
+    }   
+    
+@mixin transform-it($prop1, $prop2) {
     width: 150px;
     height: 80px;
     background-color: $primary-color;
     -webkit-transform: rotate(20deg) scale(1.5);
     -ms-transform: rotate(20deg) scale(1.5);
     transform: rotate(20deg) scale(1.5);
+}
 }
