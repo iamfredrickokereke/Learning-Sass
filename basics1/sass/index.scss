@@ -1,4 +1,4 @@
-@import 'default';
+@import 'default';// pass partial file
 
 $primary-color : #000;
 $primary-font : sans-serif, "verdana";
@@ -54,7 +54,7 @@ body{
     transform: rotate(20deg) scale(1.5);
 }
 
-// calling mixinx
+// calling mixin
 .transform{
 @include transform-it(300, 300);
 }  
